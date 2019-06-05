@@ -45,7 +45,7 @@ class CoursTableViewController: UITableViewController {
         
         switch (lesson.colorLesson) {
         case 1 :
-            cell.backgroundColor = UIColor(red:0.94, green:0.24, blue:0.24, alpha:1.0)
+            cell.backgroundColor = UIColor(red:0.94, green:0.33, blue:0.33, alpha:1.0)
         case 2:
             cell.backgroundColor = UIColor(red:0.24, green:0.52, blue:0.94, alpha:1.0)
         case 3:
@@ -58,6 +58,25 @@ class CoursTableViewController: UITableViewController {
     }
     
     
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath){
+        //tableView.deselectRow(at: indexPath as IndexPath, animated: true)
+        performSegue(withIdentifier: "showdetail", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destination.
+        if segue.identifier == "showdetail" {
+            let vc = segue.destination as! DetailsLessonViewController
+             // Pass the selected object to the new view controller.
+            vc.lesson = UserData.getSharedInstance().lessonList[(lessonTbView.indexPathForSelectedRow?.row)!]
+            
+            //vc.nameLesson = UserData.getSharedInstance().lessonList[(lessonTbView.indexPathForSelectedRow?.row)!].nameLesson
+            //vc.categoryLesson = UserData.getSharedInstance().lessonList[(lessonTbView.indexPathForSelectedRow?.row)!].categoryLesson
+           // vc.soundTableLesson = UserData.getSharedInstance().lessonList[lessonTbView.indexPathForSelectedRow?.row)!].soundTableLesson
+        }
+        
+        
+    }
     
  
 
@@ -101,20 +120,6 @@ class CoursTableViewController: UITableViewController {
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
  */
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath){
-        //tableView.deselectRow(at: indexPath as IndexPath, animated: true)
-        performSegue(withIdentifier: "showdetail", sender: self)
-    }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-        if segue.identifier == "showdetail" {
-        let vc = segue.destination as! DetailsLessonViewController
-            vc.nameLesson = UserData.getSharedInstance().lessonList[(lessonTbView.indexPathForSelectedRow?.row)!].nameLesson
-        }
- 
-
-    }
+  
     
 }

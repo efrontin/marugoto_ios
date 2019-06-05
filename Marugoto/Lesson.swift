@@ -13,13 +13,17 @@ class Lesson {
     var detailsLesson:String = ""
     var categoryLesson:String = ""
     var colorLesson:Int = 0
+    var soundTableLesson:[Song] = []
+    
     
     // initialisation d'une lesson
-    init(nameLesson: String, detailsLesson:String, categoryLesson:String, colorLesson:Int){
+    init(nameLesson: String, detailsLesson:String, categoryLesson:String, colorLesson:Int, soundTableLesson:[Song]){
         self.nameLesson = nameLesson
         self.detailsLesson = detailsLesson
         self.categoryLesson = categoryLesson
         self.colorLesson = colorLesson
+        self.soundTableLesson = soundTableLesson
+       
     }
     
     
