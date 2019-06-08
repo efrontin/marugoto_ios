@@ -3,7 +3,7 @@
 
 # Projet d'application d'aide à l'apprentissage du japonais basé sur la méthode Marugoto
 
-### Features :
+### Features : ###
 
 ##### Cours
 
@@ -25,7 +25,7 @@ Accès à la tradution des nombres en romanji et hiragana ( TableView).
 
 Accès à l'apprentissage des Hiragana et Katakana (SegmentControl + TableView) -> puis accès à l'apprentissage écrit de chaque symbol via un "Drawer" que l'on peut effacer.
 
-##### Arborescence :
+##### Arborescence : #####
 
     l__Marugoto
 
