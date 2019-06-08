@@ -1,5 +1,5 @@
 <img src="https://badgen.net/badge/efrontin/marugoto?icon=github"> <img src="https://badgen.net/badge/-/apple?icon=apple&label">
-<img src="https://badgen.net/badge/Swift/4.2/orange"> <img src="https:/badgen.net//badge/platform/ios/blue">
+<img src="https://badgen.net/badge/Swift/4.2/orange"> <img src="https://badgen.net//badge/platform/ios/blue">
 
 ## Projet d'application d'aide à l'apprentissage du japonais basé sur la méthode Marugoto
 
