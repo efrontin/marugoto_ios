@@ -11,6 +11,7 @@ import AVFoundation
 
 class SoundTableViewCell: UITableViewCell {
     
+    // import de AVFoundation pour la lecture des sons
     var audioPlayer: AVAudioPlayer?
     var lesson:Lesson?
     var song:Song?
@@ -27,13 +28,14 @@ class SoundTableViewCell: UITableViewCell {
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
+        self.contentView.backgroundColor = UIColor.white
         // Configure the view for the selected state
     }
 
+    // Lecture des sons
     func display(song: Song){
         ui_nameSound.text = song.nameSong
-        //
+        // url du fichier + extension
         let url = Bundle.main.url(forResource: song.filename, withExtension: "mp3")
         // permet de vérifier que tout est bon avant de rentrer dans la fonction
         guard url != nil else{
@@ -49,7 +51,6 @@ class SoundTableViewCell: UITableViewCell {
     
     }
     @IBAction func playSoundButton(_ sender: UIButton) {
-        
        audioPlayer?.play()
     }
     

@@ -10,6 +10,8 @@ import UIKit
 
 class AlphabetViewController: UIViewController,UITableViewDelegate, UITableViewDataSource {
    
+    var alphabet:Alphabet?
+    
     @IBOutlet weak var ui_ChoiceAlphabet: UISegmentedControl!
     @IBOutlet weak var ui_hiraganaList: UITableView!
     
@@ -60,7 +62,16 @@ class AlphabetViewController: UIViewController,UITableViewDelegate, UITableViewD
         self.ui_hiraganaList.reloadData()
     }
     
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showDrawer" {
+            let vc = segue.destination as! DrawAlphabetViewController
+            // Pass the selected object to the new view controller.
+            
+            vc.alphabet = UserData.getSharedInstance().hiraganaList[(ui_hiraganaList.indexPathForSelectedRow?.row)!]
+            vc.alphabet = UserData.getSharedInstance().katakanaList[(ui_hiraganaList.indexPathForSelectedRow?.row)!]
+            
+        }
+    }
     /*
     // MARK: - Navigation
 

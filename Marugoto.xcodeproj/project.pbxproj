@@ -17,6 +17,8 @@
 		0B6E66D422A518C00020F303 /* Alphabet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B6E66D322A518C00020F303 /* Alphabet.swift */; };
 		0B6E66D622A51DC60020F303 /* AlphabetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B6E66D522A51DC60020F303 /* AlphabetTableViewCell.swift */; };
 		0B6E66D822A5535E0020F303 /* SoundTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B6E66D722A5535E0020F303 /* SoundTableViewCell.swift */; };
+		0B8EEA3A22AC14A9002259D2 /* SurveyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8EEA3922AC14A9002259D2 /* SurveyViewController.swift */; };
+		0B8EEA3C22AC1502002259D2 /* Survey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8EEA3B22AC1502002259D2 /* Survey.swift */; };
 		0BDADD63229BC9D9009D97FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDADD62229BC9D9009D97FA /* AppDelegate.swift */; };
 		0BDADD65229BC9D9009D97FA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDADD64229BC9D9009D97FA /* ViewController.swift */; };
 		0BDADD68229BC9D9009D97FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BDADD66229BC9D9009D97FA /* Main.storyboard */; };
@@ -30,6 +32,13 @@
 		0BDBDC0022A7C06E007B09AC /* Number.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDBDBFF22A7C06E007B09AC /* Number.swift */; };
 		0BDBDC0222A7C2D4007B09AC /* NumberViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDBDC0122A7C2D4007B09AC /* NumberViewCell.swift */; };
 		0BDBDC0622A90EA3007B09AC /* CountObjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDBDC0522A90EA3007B09AC /* CountObjectViewController.swift */; };
+		0BDBDC0822A91354007B09AC /* CountObjectTBViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDBDC0722A91354007B09AC /* CountObjectTBViewCell.swift */; };
+		0BDBDC0A22A92D6F007B09AC /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDBDC0922A92D6F007B09AC /* Extension.swift */; };
+		0BDBDC1222A950E4007B09AC /* CountObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDBDC1122A950E4007B09AC /* CountObject.swift */; };
+		0BDBDC1422A95164007B09AC /* SectionCountObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDBDC1322A95164007B09AC /* SectionCountObject.swift */; };
+		0BE53F8022AA65A80098CCFA /* DrawAlphabetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE53F7F22AA65A80098CCFA /* DrawAlphabetViewController.swift */; };
+		0BE53F8222AA6ACB0098CCFA /* Drawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE53F8122AA6ACB0098CCFA /* Drawer.swift */; };
+		0BE53F8422AA82D50098CCFA /* CanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE53F8322AA82D50098CCFA /* CanvasView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +51,8 @@
 		0B6E66D322A518C00020F303 /* Alphabet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alphabet.swift; sourceTree = "<group>"; };
 		0B6E66D522A51DC60020F303 /* AlphabetTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlphabetTableViewCell.swift; sourceTree = "<group>"; };
 		0B6E66D722A5535E0020F303 /* SoundTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundTableViewCell.swift; sourceTree = "<group>"; };
+		0B8EEA3922AC14A9002259D2 /* SurveyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyViewController.swift; sourceTree = "<group>"; };
+		0B8EEA3B22AC1502002259D2 /* Survey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Survey.swift; sourceTree = "<group>"; };
 		0BDADD5F229BC9D9009D97FA /* Marugoto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Marugoto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BDADD62229BC9D9009D97FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0BDADD64229BC9D9009D97FA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -57,6 +68,13 @@
 		0BDBDBFF22A7C06E007B09AC /* Number.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Number.swift; sourceTree = "<group>"; };
 		0BDBDC0122A7C2D4007B09AC /* NumberViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberViewCell.swift; sourceTree = "<group>"; };
 		0BDBDC0522A90EA3007B09AC /* CountObjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountObjectViewController.swift; sourceTree = "<group>"; };
+		0BDBDC0722A91354007B09AC /* CountObjectTBViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountObjectTBViewCell.swift; sourceTree = "<group>"; };
+		0BDBDC0922A92D6F007B09AC /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		0BDBDC1122A950E4007B09AC /* CountObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountObject.swift; sourceTree = "<group>"; };
+		0BDBDC1322A95164007B09AC /* SectionCountObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionCountObject.swift; sourceTree = "<group>"; };
+		0BE53F7F22AA65A80098CCFA /* DrawAlphabetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawAlphabetViewController.swift; sourceTree = "<group>"; };
+		0BE53F8122AA6ACB0098CCFA /* Drawer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drawer.swift; sourceTree = "<group>"; };
+		0BE53F8322AA82D50098CCFA /* CanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasView.swift; sourceTree = "<group>"; };
 		2A5FB36E811631FC3CC62C12 /* Pods-Marugoto.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Marugoto.release.xcconfig"; path = "Target Support Files/Pods-Marugoto/Pods-Marugoto.release.xcconfig"; sourceTree = "<group>"; };
 		4F26BF91C5F75367E664CD82 /* Pods-Marugoto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Marugoto.debug.xcconfig"; path = "Target Support Files/Pods-Marugoto/Pods-Marugoto.debug.xcconfig"; sourceTree = "<group>"; };
 		880E2DA21F5087A273E2E38B /* Pods_Marugoto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Marugoto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -74,6 +92,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B1BA69222AC60B30092C419 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				0B6E66D722A5535E0020F303 /* SoundTableViewCell.swift */,
+				0B6E66D522A51DC60020F303 /* AlphabetTableViewCell.swift */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
 		0B39180A22A69DCA00911970 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -82,6 +109,10 @@
 				0BDADD7A229BE289009D97FA /* Lesson.swift */,
 				0B39180822A66CE400911970 /* Song.swift */,
 				0BDBDBFF22A7C06E007B09AC /* Number.swift */,
+				0BDBDC1122A950E4007B09AC /* CountObject.swift */,
+				0BDBDC1322A95164007B09AC /* SectionCountObject.swift */,
+				0BE53F8122AA6ACB0098CCFA /* Drawer.swift */,
+				0B8EEA3B22AC1502002259D2 /* Survey.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -107,22 +138,21 @@
 		0BDADD61229BC9D9009D97FA /* Marugoto */ = {
 			isa = PBXGroup;
 			children = (
+				0B1BA69222AC60B30092C419 /* UI */,
+				0BE53F8522AA9FA40098CCFA /* Controller */,
 				0B39180A22A69DCA00911970 /* Models */,
 				0BDADD85229C31C7009D97FA /* Sounds */,
 				0BDADD62229BC9D9009D97FA /* AppDelegate.swift */,
 				0BDADD64229BC9D9009D97FA /* ViewController.swift */,
 				0BDADD66229BC9D9009D97FA /* Main.storyboard */,
-				0BDADD74229BDEAD009D97FA /* CoursTableViewController.swift */,
 				0BDADD69229BC9DA009D97FA /* Assets.xcassets */,
 				0BDADD6B229BC9DA009D97FA /* LaunchScreen.storyboard */,
 				0BDADD6E229BC9DA009D97FA /* Info.plist */,
-				0BDADD81229C21CA009D97FA /* DetailsLessonViewController.swift */,
-				0B6E66D122A50C650020F303 /* AlphabetViewController.swift */,
-				0B6E66D522A51DC60020F303 /* AlphabetTableViewCell.swift */,
-				0B6E66D722A5535E0020F303 /* SoundTableViewCell.swift */,
-				0BDBDBFD22A7BFCE007B09AC /* NumberCollectionViewController.swift */,
 				0BDBDC0122A7C2D4007B09AC /* NumberViewCell.swift */,
-				0BDBDC0522A90EA3007B09AC /* CountObjectViewController.swift */,
+				0BDBDC0722A91354007B09AC /* CountObjectTBViewCell.swift */,
+				0BDBDC0922A92D6F007B09AC /* Extension.swift */,
+				0BE53F8322AA82D50098CCFA /* CanvasView.swift */,
+				0B8EEA3922AC14A9002259D2 /* SurveyViewController.swift */,
 			);
 			path = Marugoto;
 			sourceTree = "<group>";
@@ -136,6 +166,19 @@
 				0B6498CD229C782B00F67E04 /* sound_1.mp3 */,
 			);
 			name = Sounds;
+			sourceTree = "<group>";
+		};
+		0BE53F8522AA9FA40098CCFA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0BDADD74229BDEAD009D97FA /* CoursTableViewController.swift */,
+				0BDADD81229C21CA009D97FA /* DetailsLessonViewController.swift */,
+				0B6E66D122A50C650020F303 /* AlphabetViewController.swift */,
+				0BDBDBFD22A7BFCE007B09AC /* NumberCollectionViewController.swift */,
+				0BDBDC0522A90EA3007B09AC /* CountObjectViewController.swift */,
+				0BE53F7F22AA65A80098CCFA /* DrawAlphabetViewController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 		12361982A6029AB1682B3C17 /* Pods */ = {
@@ -275,19 +318,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				0BDADD7B229BE289009D97FA /* Lesson.swift in Sources */,
+				0B8EEA3A22AC14A9002259D2 /* SurveyViewController.swift in Sources */,
 				0B6E66D222A50C650020F303 /* AlphabetViewController.swift in Sources */,
 				0B6E66D422A518C00020F303 /* Alphabet.swift in Sources */,
 				0BDADD65229BC9D9009D97FA /* ViewController.swift in Sources */,
 				0BDADD63229BC9D9009D97FA /* AppDelegate.swift in Sources */,
 				0B39180922A66CE400911970 /* Song.swift in Sources */,
 				0BDBDC0022A7C06E007B09AC /* Number.swift in Sources */,
+				0BDBDC0822A91354007B09AC /* CountObjectTBViewCell.swift in Sources */,
+				0BE53F8422AA82D50098CCFA /* CanvasView.swift in Sources */,
+				0BDBDC1422A95164007B09AC /* SectionCountObject.swift in Sources */,
 				0B6E66D822A5535E0020F303 /* SoundTableViewCell.swift in Sources */,
+				0BE53F8022AA65A80098CCFA /* DrawAlphabetViewController.swift in Sources */,
 				0BDADD77229BE0CC009D97FA /* UserData.swift in Sources */,
+				0BDBDC0A22A92D6F007B09AC /* Extension.swift in Sources */,
+				0BE53F8222AA6ACB0098CCFA /* Drawer.swift in Sources */,
 				0BDBDC0222A7C2D4007B09AC /* NumberViewCell.swift in Sources */,
 				0BDADD82229C21CB009D97FA /* DetailsLessonViewController.swift in Sources */,
 				0BDBDC0622A90EA3007B09AC /* CountObjectViewController.swift in Sources */,
 				0B6E66D622A51DC60020F303 /* AlphabetTableViewCell.swift in Sources */,
 				0BDADD75229BDEAD009D97FA /* CoursTableViewController.swift in Sources */,
+				0B8EEA3C22AC1502002259D2 /* Survey.swift in Sources */,
+				0BDBDC1222A950E4007B09AC /* CountObject.swift in Sources */,
 				0BDBDBFE22A7BFCE007B09AC /* NumberCollectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
