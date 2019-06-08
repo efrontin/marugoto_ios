@@ -1,5 +1,5 @@
 <img src="https://badgen.net/badge/efrontin/marugoto?icon=github"> <img src="https://badgen.net/badge/-/apple?icon=apple&label">
-<img src="https://badgen.net/badge/Swift/4.2/orange"> <img src="https://badgen.net//badge/platform/ios/blue">
+<img src="https://badgen.net/badge/Swift/4.2/orange">
 
 ## Projet d'application d'aide à l'apprentissage du japonais basé sur la méthode Marugoto
 
@@ -27,22 +27,22 @@ Accès à l'apprentissage des Hiragana et Katakana (SegmentControl + TableView) 
 
 ##### Arborescence :
 
-l__Marugoto
+    l__Marugoto
 
-l__UI
+      l__UI
 
-l__Controller
+      l__Controller
 
-l__Models
+      l__Models
 
-l__Sounds
+      l__Sounds
 
-__AppDelegate
+      __AppDelegate
 
-__ViewController.swift
+      __ViewController.swift
 
-__Main.storyboard
+      __Main.storyboard
 
-l__Assets.xcassets
+      l__Assets.xcassets
 
 etc...
