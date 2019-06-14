@@ -11,7 +11,7 @@ import Foundation
 class UserData {
     private static var instance:UserData? = nil
     
-    var lessonList = [Lesson(nameLesson: "Hello Konnichiwa", detailsLesson: "Salutations", categoryLesson: "Japanese Nihongo", colorLesson: 1, soundTableLesson: [Song(nameSong: "Son leçon 1", filename: "sound_1"), Song(nameSong: "Son leçon 1-1", filename: "sound_2")]),
+    var lessonList = [Lesson(nameLesson: "Hello Konnichiwa", detailsLesson: "Salutations", categoryLesson: "Japanese Nihongo", colorLesson: 1, soundTableLesson: [Song(nameSong: "Son leçon 1", filename: "002_1_1_2"), Song(nameSong: "Son leçon 1-1", filename: "002_1_1_2[1]_ohayoo"), Song(nameSong: "Son leçon 1-2", filename: "003_1_1_2[2]_konnichiwa"), Song(nameSong: "Son leçon 1-2", filename: "004_1_1_2[3]_konbanwa"), Song(nameSong: "Son leçon 1-2", filename: "005_1_1_2[4]_sayoonara"), Song(nameSong: "Son leçon 1-2", filename: "006_1_1_2[5]_osaki_ni"), Song(nameSong: "Son leçon 1-2", filename: "007_1_1_2[6]_arigatoo")]),
                       Lesson(nameLesson: "Hello Konnichiwa", detailsLesson: "Reconnaitre les caractères japonais", categoryLesson: "Japanese Nihongo", colorLesson : 1, soundTableLesson: [Song(nameSong: "Son leçon 2", filename: "sound_1" )]),
                       Lesson(nameLesson: "Pouvez-vous répéter s'il vous plait ?", detailsLesson: "Utilisation d'expressions simples", categoryLesson: "Japanese Nihongo", colorLesson : 1, soundTableLesson: [Song(nameSong: "Son leçon 3", filename: "sound_2" )]),
                       Lesson(nameLesson: "Pouvez-vous répéter s'il vous plait ?", detailsLesson: "Ecrire son nom et son pays en japonais", categoryLesson: "Japanese Nihongo", colorLesson : 1, soundTableLesson: [Song(nameSong: "Son leçon 3", filename: "sound_2" )]),
@@ -71,8 +71,7 @@ class UserData {
                         Alphabet(name: "ケ", traduction: "ke"),
                         Alphabet(name: "コ", traduction: "ko")
     ]
-    
-    var sectionList = [SectionCountObject(nameSection: "Petit Objet", listCountObject: [CountObject(nameCountObject: "Hitotsu", tradCountObject: "Hitotsu")]), SectionCountObject(nameSection: "Petit Objet", listCountObject: [CountObject(nameCountObject: "Futatsu", tradCountObject: "Futatsu")]), SectionCountObject(nameSection: "Petit Objet", listCountObject: [CountObject(nameCountObject: "Mittsu", tradCountObject: "Mittsu")])]
+
     
     static func getSharedInstance() -> UserData {
         if instance == nil {

@@ -14,10 +14,10 @@ class DrawAlphabetViewController: UIViewController {
     var alphabet:Alphabet?
     
     @IBOutlet weak var ui_nameToDraw: UILabel!
-    @IBOutlet weak var ui_canvasDrawer: UIView!
+    @IBOutlet weak var ui_canvasDrawer: CanvasView!
     @IBOutlet weak var ui_clearButton: UIButton!
     
-    let canvas = CanvasView()
+    //let canvas = CanvasView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,13 +37,13 @@ class DrawAlphabetViewController: UIViewController {
 //            realm.add(myDrawer)
 //        }
         
-        ui_canvasDrawer.addSubview(canvas)
-        canvas.frame = view.frame
+       // ui_canvasDrawer.addSubview(canvas)
+        //canvas.frame = view.frame
         
     }
     
     @IBAction func clearCanvas(_ sender: UIButton) {
-        canvas.clearCanvas()
+        ui_canvasDrawer.clearCanvas()
     }
     
     

@@ -7,48 +7,62 @@
 //
 
 import UIKit
+import Alamofire
+
 
 class SurveyViewController: UIViewController {
-    @IBOutlet weak var ui_nameSurvey: UILabel!
-    @IBOutlet weak var ui_usernameSurvey: UILabel!
-    @IBOutlet weak var ui_websiteSurvey: UILabel!
+
+    @IBOutlet weak var ui_numberQuestion: UILabel!
+    @IBOutlet weak var ui_questionText: UILabel!
+    @IBOutlet weak var ui_choiceAnswer: UISegmentedControl!
+    
+    var questionList:[Survey] = []
+    var currentQuestionIndex = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-       let jsonUrlString = "https://jsonplaceholder.typicode.com/users"
-        guard let url = URL(string: jsonUrlString) else { return }
         
-        URLSession.shared.dataTask(with: url){
-            (data, response, err) in
-    
-            guard let data = data else { return }
-            
-            /*let dataAsString = String(data: data, encoding: .utf8)
-            print(dataAsString)
- */
-            do{
-                let survey = try JSONDecoder().decode([Survey].self, from: data)
-                print(survey[0].name ?? "")
+        let request = Alamofire.request("https://questionnaire-js.surge.sh/db.json")
+        
+        request.responseData { (response) in
+            if let rawJsonData = response.result.value
+                {
+                    
+                    do {
+                        let questionList = try JSONDecoder().decode([Survey].self, from: rawJsonData)
+                        self.questionList = questionList
+                        for question in questionList {
+                            print("- \(question.header) - \(question.title)")
+                        }
+                        self.displayQuestion(atIndex: 0)
+                    } catch {
+                        print(error)
+                    }
                 
-            } catch let jsonErr {
-                print("Error serialize Json", jsonErr)
+                
+               
             }
-            
-        }.resume()
+        }
+    
+    }
+    
+    func displayQuestion(atIndex questionIndex:Int) {
+        guard currentQuestionIndex < questionList.count else {
+            return
+        }
+        self.ui_numberQuestion.text = "\(questionList[questionIndex].header)"
+        self.ui_questionText.text = "\(questionList[questionIndex].title)"
         
+        ui_choiceAnswer.setTitle(questionList[questionIndex].options[0], forSegmentAt: 0)
+        ui_choiceAnswer.setTitle(questionList[questionIndex].options[1], forSegmentAt: 1)
+        ui_choiceAnswer.setTitle(questionList[questionIndex].options[2], forSegmentAt: 2)
         
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func ui_choiseOption(_ sender: UISegmentedControl) {
+        currentQuestionIndex += 1
+        displayQuestion(atIndex: currentQuestionIndex)
+        
     }
-    */
 
 }

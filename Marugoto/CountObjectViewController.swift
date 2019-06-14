@@ -13,6 +13,7 @@ class CountObjectViewController: UIViewController, UITableViewDataSource {
     
     var countObject: CountObject?
     var sectionCountObject: SectionCountObject?
+    
   
     @IBOutlet weak var ui_headerCountObject: UIImageView!
     
@@ -23,7 +24,6 @@ class CountObjectViewController: UIViewController, UITableViewDataSource {
         let processor = BlendImageProcessor(blendMode: .softLight, alpha: 1.0, backgroundColor: .lightGray)
        ui_headerCountObject.kf.setImage(with: url, options: [.processor(processor)])
         ui_headerCountObject.kf.indicatorType = .activity
-        
         
         // Do any additional setup after loading the view.
     }
@@ -45,8 +45,11 @@ class CountObjectViewController: UIViewController, UITableViewDataSource {
     
     // retourne la section
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 0
-        
+        return sectionCountObject?.nameSection.count ?? 0
+    }
+    
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return sectionCountObject?.nameSection
     }
     /*
     // MARK: - Navigation

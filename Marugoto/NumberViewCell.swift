@@ -12,5 +12,5 @@ class NumberViewCell: UICollectionViewCell {
     @IBOutlet weak var ui_numberCharacter: UILabel!
     @IBOutlet weak var ui_hiraganaCharacter: UILabel!
     @IBOutlet weak var ui_romanjiCharacter: UILabel!
-    
+   
 }

@@ -54,7 +54,8 @@ class NumberCollectionViewController: UICollectionViewController {
         cell.ui_numberCharacter.text = "\(number.numberCharacter)"
         cell.ui_romanjiCharacter.text = "\(number.romanjiCharacter)"
         cell.ui_hiraganaCharacter.text = "\(number.hiraganaCharacter)"
-        
+        cell.layer.borderWidth = 2.0
+        cell.layer.borderColor = UIColor.gray.cgColor
         // Configure the cell
     
         return cell

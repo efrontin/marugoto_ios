@@ -8,14 +8,16 @@
 
 import Foundation
 
-struct Survey: Decodable{
-    let name: String?
-    let username: String?
-   let website: String?
+struct Survey : Codable {
+    let header:String
+    let title:String
+    let options: [String]
     
-    /*init(json: [String: Any]) {
-        name = json["name"] as? String ?? ""
-        username = json["username"] as? String ?? ""
-        website = json["website"] as? String ?? ""
-    }*/
+    
+    enum CodingKeys:String,CodingKey {
+        case header
+        case title = "question"
+        case options
+    }
+    
 }
