@@ -71,7 +71,9 @@ class UserData {
                         Alphabet(name: "ケ", traduction: "ke"),
                         Alphabet(name: "コ", traduction: "ko")
     ]
-
+    
+    
+    var sectionList = [SectionCountObject(nameSection: "Petit objet", listCountObject: [CountObject(nameCountObject: "un", tradCountObject: "ichi"),CountObject(nameCountObject: "ni", tradCountObject: "deux")]),SectionCountObject(nameSection: "Long objet", listCountObject: [CountObject(nameCountObject: "un", tradCountObject: "ichi")]),SectionCountObject(nameSection: "Objet plat", listCountObject: [CountObject(nameCountObject: "un", tradCountObject: "ichi")]),SectionCountObject(nameSection: "Etre humain", listCountObject: [CountObject(nameCountObject: "un", tradCountObject: "ichi")])]
     
     static func getSharedInstance() -> UserData {
         if instance == nil {

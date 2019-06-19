@@ -23,38 +23,11 @@ class DrawAlphabetViewController: UIViewController {
         super.viewDidLoad()
 
         ui_nameToDraw.text = alphabet?.name
-        // Do any additional setup after loading the view.
-//        var realmConfig = Realm.Configuration.defaultConfiguration
-//        print(realmConfig.fileURL)
-//
-//        let myDrawer = Drawer()
-//        myDrawer.name = "a"
-//        myDrawer.task = "Dessin"
-//
-//        let realm = try! Realm()
-//
-//        try! realm.write {
-//            realm.add(myDrawer)
-//        }
-        
-       // ui_canvasDrawer.addSubview(canvas)
-        //canvas.frame = view.frame
-        
     }
     
     @IBAction func clearCanvas(_ sender: UIButton) {
         ui_canvasDrawer.clearCanvas()
     }
     
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

@@ -9,7 +9,7 @@
 import UIKit
 
 class CountObjectTBViewCell: UITableViewCell {
-
+    
     @IBOutlet weak var ui_hiraganaName: UILabel!
     @IBOutlet weak var ui_traductionNumber: UILabel!
     
@@ -24,9 +24,8 @@ class CountObjectTBViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func showCountList(countObject: CountObject){
+    func showCountList(countObject : CountObject){
         ui_hiraganaName.text = countObject.nameCountObject
         ui_traductionNumber.text = countObject.tradCountObject
     }
-
 }
