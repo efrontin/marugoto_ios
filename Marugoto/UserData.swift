@@ -21,6 +21,10 @@ class UserData {
                       Lesson(nameLesson: "Nani ga suki desuka ?", detailsLesson: "Parle de ta nourriture favorite", categoryLesson: "Food/Tabemono", colorLesson : 3, soundTableLesson: [Song(nameSong: "Leçon 5", filename: "sound_2" )]),
                       Lesson(nameLesson: "Nani ga suki desuka ?", detailsLesson: "Offre un verre à quelqu'un", categoryLesson: "Food/Tabemono", colorLesson : 3, soundTableLesson: [Song(nameSong: "Leçon 5", filename: "sound_2" )]),
                       Lesson(nameLesson: "Nani ga suki desuka ?", detailsLesson: "Parle de ton petit déjeuner", categoryLesson: "Food/Tabemono", colorLesson : 3, soundTableLesson: [Song(nameSong: "Leçon 5", filename: "sound_2" )]),
+                      Lesson(nameLesson: "Heya ga mittsu arimasu ?", detailsLesson: "Dans quel logement vis-tu ?", categoryLesson: "Home/Ie", colorLesson : 4, soundTableLesson: [Song(nameSong: "Leçon 7", filename: "sound_2" )]),
+                      Lesson(nameLesson: "Li heya desu ne", detailsLesson: "Demande où je peux laisser mes affaires", categoryLesson: "Home/Ie", colorLesson : 4, soundTableLesson: [Song(nameSong: "Leçon 8", filename: "sound_2" )]),
+                      Lesson(nameLesson: "Na-ji ni okimasuka", detailsLesson: "Demande où je peux laisser mes affaires", categoryLesson: "Daily Life/Seekatsu", colorLesson : 5, soundTableLesson: [Song(nameSong: "Leçon 9", filename: "sound_2" )]),
+                      Lesson(nameLesson: "Itsu ga ii desuka", detailsLesson: "Qu'est ce qui te convient le mieux ?", categoryLesson: "Daily Life/Seekatsu", colorLesson : 5, soundTableLesson: [Song(nameSong: "Leçon 10", filename: "sound_2" )]),
                    
     ]
     var nameLesson:[String] = []

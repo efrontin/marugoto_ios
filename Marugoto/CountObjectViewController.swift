@@ -20,23 +20,27 @@ class CountObjectViewController: UIViewController, UITableViewDataSource, UITabl
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        showNameSection.append("Petit objet")
-        showList.append([CountObject(nameCountObject: "un", tradCountObject:      "ichi"),CountObject(nameCountObject: "deux", tradCountObject: "ni"),
-                         CountObject(nameCountObject: "trois", tradCountObject: "san"),CountObject(nameCountObject: "quatre", tradCountObject: "yon")
+        showNameSection.append("Objets : 🍎")
+        showList.append([CountObject(nameCountObject: "un", tradCountObject:      "hitotsu"),CountObject(nameCountObject: "deux", tradCountObject: "futatsu"),
+                         CountObject(nameCountObject: "trois", tradCountObject: "mittsu"),CountObject(nameCountObject: "quatre", tradCountObject: "yottsu"),CountObject(nameCountObject: "cinq", tradCountObject: "itsutsu"),CountObject(nameCountObject: "six", tradCountObject: "muttsu")
             ])
         
-        showNameSection.append("Long objet")
-        showList.append([CountObject(nameCountObject: "un", tradCountObject:      "ichi"),CountObject(nameCountObject: "deux", tradCountObject: "ni"),
-                         CountObject(nameCountObject: "trois", tradCountObject: "san"),CountObject(nameCountObject: "quatre", tradCountObject: "yon")
+        showNameSection.append("Objets longs et minces : 🖊")
+        showList.append([CountObject(nameCountObject: "un", tradCountObject:      "ippon"),CountObject(nameCountObject: "deux", tradCountObject: "ni-hon"),
+                         CountObject(nameCountObject: "trois", tradCountObject: "san-bon"),CountObject(nameCountObject: "quatre", tradCountObject: "yon-hon"),CountObject(nameCountObject: "cinq", tradCountObject: "go-hon"),CountObject(nameCountObject: "six", tradCountObject: "rop-pon")
             ])
         
-        showNameSection.append("Personne")
-        showList.append([CountObject(nameCountObject: "un", tradCountObject:      "ichi"),CountObject(nameCountObject: "deux", tradCountObject: "ni"),
-                         CountObject(nameCountObject: "trois", tradCountObject: "san"),CountObject(nameCountObject: "quatre", tradCountObject: "yon")
+        showNameSection.append("Personnes : 👨‍👨‍👧‍👧")
+        showList.append([CountObject(nameCountObject: "un", tradCountObject:      "hitori"),CountObject(nameCountObject: "deux", tradCountObject: "futari"),
+                         CountObject(nameCountObject: "trois", tradCountObject: "san-nin"),CountObject(nameCountObject: "quatre", tradCountObject: "yo-nin"),CountObject(nameCountObject: "cinq", tradCountObject: "go-nin"),CountObject(nameCountObject: "six", tradCountObject: "roku-nin")
+            ])
+        showNameSection.append("Objets plats : 📄")
+        showList.append([CountObject(nameCountObject: "un", tradCountObject:      "ichi-mai"),CountObject(nameCountObject: "deux", tradCountObject: "ni-mai"),
+                         CountObject(nameCountObject: "trois", tradCountObject: "san-mai"),CountObject(nameCountObject: "quatre", tradCountObject: "yon-mai"),CountObject(nameCountObject: "cinq", tradCountObject: "go-mai"),CountObject(nameCountObject: "six", tradCountObject: "roku-mai")
             ])
         
-        let url = URL(string: "https://apprendrelejaponais.online/wp-content/uploads/2018/11/compter.jpg")
-        let processor = BlendImageProcessor(blendMode: .softLight, alpha: 1.0, backgroundColor: .lightGray)
+        let url = URL(string: "https://gaijinpot.scdn3.secure.raxcdn.com/app/uploads/sites/4/2017/01/Counting-by-Casey.jpg")
+        let processor = BlendImageProcessor(blendMode: .plusLighter, alpha: 0.5, backgroundColor: .lightGray)
        ui_headerCountObject.kf.setImage(with: url, options: [.processor(processor)])
         ui_headerCountObject.kf.indicatorType = .activity
  

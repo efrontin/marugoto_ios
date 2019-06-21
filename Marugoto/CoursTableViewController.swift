@@ -43,6 +43,10 @@ class CoursTableViewController: UITableViewController {
             cell.backgroundColor = UIColor(red:0.61, green:0.79, blue:1.00, alpha:1.0)
         case 3:
             cell.backgroundColor = UIColor(red:0.69, green:1.00, blue:0.61, alpha:1.0)
+        case 4:
+            cell.backgroundColor = UIColor(red:1.00, green:0.84, blue:0.00, alpha:1.0)
+        case 5:
+            cell.backgroundColor = UIColor(red:0.96, green:0.69, blue:0.97, alpha:1.0)
         default:
             break
         }
